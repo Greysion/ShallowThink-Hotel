@@ -16,13 +16,17 @@ public class CrawlAI : MonoBehaviour
 
     [SerializeField] [Range(0.1f, 2f)] private float movementSpeed = 1f;
 
+    [SerializeField] [Range(0f, 5f)] private float leashBuffer = 1f;
+
     // Our component Grabs.
     Animator myAnimator;
     SpriteRenderer mySprite;
+    Transform myParent;
+    float myLeash;
 
     // Internal heavy-use variables for ease of access.
-    private WaitForSeconds gameplayTick = new WaitForSeconds(1f);
-    private Vector3 currentDirection = new Vector3(1, 0, 0);
+    private WaitForSeconds myTick;
+    private Vector3 myDirection = new Vector3(1, 0, 0);
     private bool moving = false;
 
     Coroutine myTicker;
@@ -32,6 +36,7 @@ public class CrawlAI : MonoBehaviour
 
         myAnimator = GetComponent<Animator>();
         mySprite = GetComponent<SpriteRenderer>();
+        myParent = transform.parent;
 
     }
 
@@ -40,10 +45,12 @@ public class CrawlAI : MonoBehaviour
 
         // Make sure if we've been flipped that we flip back around.
         if (mySprite.flipX)
-            currentDirection *= -1;
+            myDirection *= -1;
 
-        // Start our main gameplay tick.
-        myTicker = StartCoroutine(GameplayTick()); 
+        // Set a few starting variables to control our AI behaviour.
+        myTick = new WaitForSeconds(Random.Range(0.95f, 1.05f));
+        myLeash = (myParent.GetComponent<RectTransform>().rect.width / 2) - leashBuffer;
+        myTicker = StartCoroutine(GameplayTick());
 
     }
 
@@ -58,9 +65,18 @@ public class CrawlAI : MonoBehaviour
         // If we're moving, pick our current direction and move slowly towards it.
         if (moving) {
 
+            // Move towards our direction.
             myAnimator.transform.position = Vector2.MoveTowards(myAnimator.transform.position,
-                myAnimator.transform.position + currentDirection,
+                myAnimator.transform.position + myDirection,
                 movementSpeed * Time.deltaTime);
+
+            // Contain ourselves to the boundary of our parent button.
+            if (Mathf.Abs(transform.localPosition.x) >= myLeash) {
+
+                myDirection = transform.localPosition.x > 0 ? Vector3.left : Vector3.right;
+                mySprite.flipX = transform.localPosition.x > 0;
+
+            }
 
         }
 
@@ -77,10 +93,10 @@ public class CrawlAI : MonoBehaviour
 
             if (Random.Range(1, 100) >= turnChance) {
                 mySprite.flipX = !mySprite.flipX;
-                currentDirection *= -1;
+                myDirection *= -1;
             }
 
-            yield return gameplayTick;
+            yield return myTick;
 
         }
 
