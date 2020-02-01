@@ -10,7 +10,7 @@ PrefabInstance:
     - target: {fileID: 6844487175493652578, guid: ae9f85fb68b4a8948b7f998b89c06fc0,
         type: 3}
       propertyPath: m_Name
-      value: Room (2)
+      value: Room
       objectReference: {fileID: 0}
     - target: {fileID: 1347916794871142556, guid: ae9f85fb68b4a8948b7f998b89c06fc0,
         type: 3}
@@ -85,17 +85,17 @@ PrefabInstance:
     - target: {fileID: 6943345008605689102, guid: ae9f85fb68b4a8948b7f998b89c06fc0,
         type: 3}
       propertyPath: m_Color.r
-      value: 0.3018868
+      value: 0.26771092
       objectReference: {fileID: 0}
     - target: {fileID: 6943345008605689102, guid: ae9f85fb68b4a8948b7f998b89c06fc0,
         type: 3}
       propertyPath: m_Color.g
-      value: 0.1267355
+      value: 0.19935921
       objectReference: {fileID: 0}
     - target: {fileID: 6943345008605689102, guid: ae9f85fb68b4a8948b7f998b89c06fc0,
         type: 3}
       propertyPath: m_Color.b
-      value: 0.19108444
+      value: 0.3018868
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ae9f85fb68b4a8948b7f998b89c06fc0, type: 3}
