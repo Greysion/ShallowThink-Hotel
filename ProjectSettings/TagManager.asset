@@ -3,7 +3,9 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Room
+  - Bug
   layers:
   - Default
   - TransparentFX
@@ -40,4 +42,19 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Background
+    uniqueID: 3639759823
+    locked: 0
+  - name: Background Objects
+    uniqueID: 4130541945
+    locked: 0
+  - name: Actors
+    uniqueID: 809018643
+    locked: 0
+  - name: Foreground Objects
+    uniqueID: 2276054031
+    locked: 0
+  - name: Foreground
+    uniqueID: 1257396185
     locked: 0
