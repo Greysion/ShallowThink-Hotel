@@ -19,5 +19,4 @@ public class EmptyRoom : Room
 		return;
 	}
 
-
 }
