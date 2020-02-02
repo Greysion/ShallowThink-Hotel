@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: MainframeConfig
   m_EditorClassIdentifier: 
   typeOf: {fileID: 0}
-  hasObjects: 0
+  hasObjects: 1
   myBackgrounds:
   - {fileID: 21300000, guid: e579701563bb86c46a6ea80c1d4830b6, type: 3}
   myForegrounds:

@@ -16,6 +16,7 @@ MonoBehaviour:
   hasObjects: 0
   myBackgrounds:
   - {fileID: 21300000, guid: b0fb72f9e4c19504ab668471e11a3a9b, type: 3}
+  - {fileID: 21300000, guid: 633c7885d9c884247a9488d2ca6e3cae, type: 3}
   myForegrounds:
   - {fileID: 21300000, guid: 03bc2e6392ade5848bb8c89f81e9d83f, type: 3}
   myShadows:

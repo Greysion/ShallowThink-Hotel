@@ -14,7 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   typeOf: {fileID: 7645113780426975357, guid: 52da94d817bc3d247bfd228f5ccc780e, type: 3}
   hasObjects: 0
-  myBackgrounds: []
-  myForegrounds: []
-  myShadows: []
+  myBackgrounds:
+  - {fileID: 21300000, guid: 633c7885d9c884247a9488d2ca6e3cae, type: 3}
+  - {fileID: 21300000, guid: b0fb72f9e4c19504ab668471e11a3a9b, type: 3}
+  myForegrounds:
+  - {fileID: 21300000, guid: 57a6bc02f18db9442bdc51f87edc87eb, type: 3}
+  myShadows:
+  - {fileID: 21300000, guid: 30b554038588b054fb35447d3964d3a8, type: 3}
   myObjects: []
