@@ -258,6 +258,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: MainframeComponent (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 3752839774232225121, guid: 2bdeda687d5bb364894f6c560ae1576f,
+        type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 7761472046279240235, guid: 2bdeda687d5bb364894f6c560ae1576f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -362,6 +367,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8473445937884715715, guid: 2bdeda687d5bb364894f6c560ae1576f,
+        type: 3}
+      propertyPath: m_Mesh
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2bdeda687d5bb364894f6c560ae1576f, type: 3}
