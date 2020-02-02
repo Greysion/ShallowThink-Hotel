@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 538177889cdd20242aecbd2a06fa40dd, type: 3}
+  m_Name: EmptyRoom
+  m_EditorClassIdentifier: 
+  typeOf: {fileID: 5475472708969809192, guid: 9ab4d5f900e31ea439abcaeee362de31, type: 3}
+  hasObjects: 0
+  myBackground:
+  - {fileID: 21300000, guid: b0fb72f9e4c19504ab668471e11a3a9b, type: 3}
+  myForeground:
+  - {fileID: 21300000, guid: 03bc2e6392ade5848bb8c89f81e9d83f, type: 3}
+  myShadow:
+  - {fileID: 21300000, guid: 52cd8a6d077428d439ebc86dfb80752c, type: 3}
+  myObject: []

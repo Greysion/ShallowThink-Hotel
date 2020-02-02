@@ -25,11 +25,11 @@ public class CrawlAI : MonoBehaviour
     float myLeash;
 
     // Internal heavy-use variables for ease of access.
-    private WaitForSeconds myTick;
     private Vector3 myDirection = new Vector3(1, 0, 0);
     private bool moving = false;
 
-    Coroutine myTicker;
+    private Coroutine myTicker;
+    private WaitForSeconds myTick;
 
     // Used for component grabs and early initialisation before the main start function.
     public void Awake() {
